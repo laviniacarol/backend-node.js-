@@ -1,9 +1,8 @@
-Contexto do repositório
-
-Backend em Node.js com Express: Esse projeto serve como backend para receber requisições HTTP.
-Sobre o BemVindoHelper
+<h1>Contexto do repositório: Backend em Node.js com Express: Esse projeto serve como backend para receber requisições HTTP.
+Sobre o BemVindoHelper</h1>
 
 Esse helper cria uma mensagem de boas-vindas personalizada baseada nos dados que você envia via requisição (GetRequest).
+<hr>
 
 Como funciona:
 
@@ -22,6 +21,7 @@ if (input.nome) {
 } else {
     mensagem += "visitante, ";
 }
+<br>
 
 
 Se houver nome, usa ele; senão, chama de "visitante".
@@ -39,6 +39,7 @@ if(input.idade) {
     mensagem += "não consegui identificar sua idade."
 }
 
+<br>
 
 Usa o helper IdadeHelper.ehAdulto() para checar se a pessoa é maior de idade.
 
@@ -47,6 +48,8 @@ Se idade não estiver presente, avisa que não conseguiu identificar.
 Finaliza a mensagem:
 
 return mensagem + "!";Helpers: Mantêm a lógica separada, deixando os controllers limpos.
+
+<br>
 
 DTOs (GetRequest): Garantem que os dados recebidos têm o formato esperado.
 

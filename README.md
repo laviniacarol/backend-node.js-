@@ -1,13 +1,13 @@
-<h1>Contexto do repositório: Backend em Node.js com Express: Esse projeto serve como backend para receber requisições HTTP.
+<h3>Contexto do repositório</h3> 
+<br>
+<h1>Backend em Node.js com Express: Esse projeto serve como backend para receber requisições HTTP.
 Sobre o BemVindoHelper</h1>
-
 Esse helper cria uma mensagem de boas-vindas personalizada baseada nos dados que você envia via requisição (GetRequest).
 <hr>
 
 Como funciona:
 
 Recebe os dados:
-
 input: GetRequest
 
 

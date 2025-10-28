@@ -5,15 +5,15 @@ Sobre o BemVindoHelper</h1>
 Esse helper cria uma mensagem de boas-vindas personalizada baseada nos dados que você envia via requisição (GetRequest).
 <hr>
 
-Como funciona:
+**Como funciona**
 
-Recebe os dados:
+- Recebe os dados:
 input: GetRequest
 
 
-Espera algo como { nome?: string, idade?: string }.
+- Espera algo como { nome?: string, idade?: string }.
 
-Monta a mensagem inicial:
+- Monta a mensagem inicial:
 
 let mensagem = "Boas vindas ";
 if (input.nome) {
@@ -26,7 +26,7 @@ if (input.nome) {
 
 Se houver nome, usa ele; senão, chama de "visitante".
 
-Verifica idade:
+- Verifica idade:
 
 if(input.idade) {
      const ehAdulto = IdadeHelper.ehAdulto(parseInt(input.idade))
@@ -41,18 +41,18 @@ if(input.idade) {
 
 <br>
 
-Usa o helper IdadeHelper.ehAdulto() para checar se a pessoa é maior de idade.
+- Usa o helper IdadeHelper.ehAdulto() para checar se a pessoa é maior de idade.
 
-Se idade não estiver presente, avisa que não conseguiu identificar.
+- Se idade não estiver presente, avisa que não conseguiu identificar.
 
-Finaliza a mensagem:
+- Finaliza a mensagem:
 
 return mensagem + "!";Helpers: Mantêm a lógica separada, deixando os controllers limpos.
 
 <br>
 
-DTOs (GetRequest): Garantem que os dados recebidos têm o formato esperado.
+**DTOs (GetRequest): Garantem que os dados recebidos têm o formato esperado.**
 
-TypeScript: Evita erros de tipo em tempo de compilação.
+**TypeScript: Evita erros de tipo em tempo de compilação.**
 
-Integração com Postman: Facilita testes das rotas de API.
+**Integração com Postman: Facilita testes das rotas de API.**
